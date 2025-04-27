@@ -1,0 +1,9 @@
+services:
+  flask:
+    image: pyserver:latest
+
+  nginx:
+    image: nginx:proxy
+    ports:
+      - "8080:80"
+  
