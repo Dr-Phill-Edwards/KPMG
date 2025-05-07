@@ -58,7 +58,7 @@ docker rm -f nginx
 Start a container from the new image.
 
 ```bash
-docker run -d --name nginx -p 8080:8080 nginx:v1
+docker run -d --name nginx -p 8080:80 nginx:v1
 curl http://localhost:8080
 docker exec -it nginx /bin/sh
 vi /usr/share/nginx/html/index.html
