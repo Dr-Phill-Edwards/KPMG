@@ -1,9 +1,16 @@
+name: kpmg
 services:
-  flask:
-    image: pyserver:latest
-
-  nginx:
-    image: nginx:proxy
+  github:
+    image: github:latest
     ports:
-      - "8080:80"
-  
+      - "2222:22"
+    volumes:
+      - github:/home/git
+    networks:
+      - workshop
+volumes:
+  github:
+    external: true
+networks:
+  workshop:
+    external: true

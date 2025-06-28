@@ -1,0 +1,8 @@
+dn: cn=ticar,ou=Groups,dc=kpmg,dc=com
+objectClass: inetOrgPerson
+cn: ticar
+sn: ticar
+givenName: TiCar
+uid: ticar
+mail: ticar@kpmg.com
+userPassword: ticarpw

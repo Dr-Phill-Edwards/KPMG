@@ -1,0 +1,7 @@
+dn: o=kpmg,dc=kpmg,dc=com
+objectClass: organization
+o: kpmg
+
+dn: ou=Groups,dc=kpmg,dc=com
+objectClass: organizationalUnit
+ou: Groups

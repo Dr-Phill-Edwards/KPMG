@@ -1,0 +1,7 @@
+#! /bin/bash
+
+docker run -d --name mysql \
+    -e MYSQL_ROOT_PASSWORD=rootpw \
+    -e MYSQL_USER=ticar -e MYSQL_PASSWORD=ticarpw \
+    --network kpmgworkshop_default -h mysql \
+    -p 3306:3306 -v mysql:/var/lib/mysql mysql:9
