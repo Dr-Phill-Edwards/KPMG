@@ -15,13 +15,13 @@
           rel="stylesheet">
     <link rel='stylesheet' href="{{ config['URL_PREFIX'] }}/static/common.css">
 
-    <script src="{{ config['CDN_BASE_URL'] }}/jquery/{{ config['JQUERY_VERSION'] }}/jquery.min.js"></script>
-    <script src="{{ config['CDN_BASE_URL']}}/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="{{ config['CDN_BASE_URL'] }}/datatables/{{ config['DATATABLES_VERSION'] }}/datatables.min.js"></script>
-    <script src="{{ config['CDN_BASE_URL'] }}/datatables/1.10.21/enum.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ config['CDN_BASE_URL'] }}/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/2.3.2/sorting/enum.js"></script>
     <script src="{{ config['URL_PREFIX'] }}/static/common.js"></script>
-    <script src="{{ config['CDN_BASE_URL'] }}/momentjs/2.24.0/moment.js"></script>
-    <script src="{{ config['CDN_BASE_URL'] }}/datatables/datatime-moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.16/sorting/datetime-moment.js"></script>
 
   {% endblock %}
 </head>
