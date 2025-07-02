@@ -6,7 +6,8 @@ COPY . .
 RUN pip-compile requirements.in
 RUN mv requirements.txt req.txt && grep -v msgspec req.txt > requirements.txt
 RUN pip install -r requirements.txt
-ENV FLASK_ENV=testing
+ENV FLASK_ENV=docker
 ENV FLASK_APP=ticar.app
+ENV URI_PREFOX=/ticar
 ENV USERNAME=ticar
-CMD ["flask","run","--host=0.0.0.0"]
+CMD ["flask","run","--host=0.0.0.0","--debug"]

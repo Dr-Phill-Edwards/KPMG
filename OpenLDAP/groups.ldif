@@ -1,4 +1,6 @@
-dn: o=kpmg,dc=kpmg,dc=com
+dn: dc=kpmg,dc=com
+objectClass: top
+objectClass: dcObject
 objectClass: organization
 o: kpmg
 

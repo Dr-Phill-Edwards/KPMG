@@ -1,0 +1,15 @@
+DOCKER:
+  SERVER_NAME: 'localhost:5000'
+  DEBUG: True
+  TESTING: False
+  LOG_TO_ELK: False
+  SQLALCHEMY_DATABASE_URI: "mysql+pymysql://ticar:ticarpw@mysql/ticar_db"
+  CDN_BASE_URL: http://localhost:8080/ticar/static
+  URL_PREFIX: http://localhost:8080/ticar
+  URI_PREFIX: /ticar
+  LDAP_SERVER: ldap://ldap
+  LDAP_BASE: 'dc=kpmg,dc=com'
+  LDAP_BIND_DN: "cn=admin,dc=kpmg,dc=com"
+  LDAP_BIND_PW : admin
+  LDAP_ADMIN_GROUP: Groups
+  LDAP_APPROVER_GROUP: Groups

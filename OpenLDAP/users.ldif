@@ -1,8 +1,11 @@
 dn: cn=ticar,ou=Groups,dc=kpmg,dc=com
 objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
 cn: ticar
 sn: ticar
 givenName: TiCar
 uid: ticar
 mail: ticar@kpmg.com
 userPassword: ticarpw
+description: TiCaR User

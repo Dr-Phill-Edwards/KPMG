@@ -11,6 +11,7 @@ if [[ ${configured} == 0 ]]
 then
     sleep 5
     ldapmodify -Y EXTERNAL -H ldapi:/// -f /opt/ldap/setup.ldif
+    ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/msuser.ldif
     ldapadd -Y EXTERNAL -H ldapi:/// -f /opt/ldap/groups.ldif
     ldapadd -Y EXTERNAL -H ldapi:/// -f /opt/ldap/users.ldif
 fi
